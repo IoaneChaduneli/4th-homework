@@ -10,7 +10,7 @@ while True:
         #add product in grossery list
         grossery_list.append(product)
         #if end the program terminated its work and read the below codes
-    except KeyboardInterrupt:
+    except EOFError:
         break
 
 #counter helps to check the frequency and it convert list to dict
