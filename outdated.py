@@ -46,7 +46,7 @@ while True:
                     print(f'{year}-{new_date[2]:0>2},{new_date[1]:0>2}')
     
     else:
-        print("Please Invalid gives us invalid input")
+        print("Please  gives us invalid input")
                     
                         
                     
