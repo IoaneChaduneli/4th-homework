@@ -16,7 +16,7 @@ months = [
 
 
 while True:
-    date = input("MM/DD/YYYY: ")
+    date = input("MM/DD/YYYY: ").title()
 
     if len(date.split("/")) == 3:
         # convert list and split the chars
@@ -42,8 +42,10 @@ while True:
                     for i in new_date:
                         if len(i) > 2:
                             year = i
+                        if int(i) < 32:
+                            day = str(i)
                     
-                    print(f'{year}-{new_date[2]:0>2},{new_date[1]:0>2}')
+                    print(f'{year}-{new_date[2]:0>2}-{day:0>2}')
     
     else:
         print("Please  gives us invalid input")
