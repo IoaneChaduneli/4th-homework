@@ -12,7 +12,7 @@ if len(sys.argv) > 2 and sys.argv[1] == '-f' or sys.argv[1] == '--font':
         print(f"Error: font '{font_name}' not found.")
     
 else:
-    print(f"Error: font {font_name} not found.")
+    print("Error: invalid command line arguments.")
     sys.exit()
 
 text = input('text: ')
